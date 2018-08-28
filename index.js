@@ -86,3 +86,26 @@ prev.addEventListener('click', function() {
     tests.classList.add('first');
 })
 /// End Of Testimonial Section
+
+
+//////// FAQ Accordion Section /////////
+const acc = document.getElementsByClassName('accordion');
+
+for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener('click', function() {
+        // add in the active class
+        this.classList.toggle('active');
+
+        //select sibling element
+        let panel = this.nextElementSibling;
+
+        //if sibling open, close. if close, open
+        if (panel.style.maxHeight) {
+            //panel is open
+            panel.style.maxHeight= null;
+        } else {
+            //panel is closed
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+    });
+}
