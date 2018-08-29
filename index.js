@@ -41,7 +41,7 @@ let prevInt = window.setInterval(function() {
     }
 }, 16000)
 
-//middle dot click
+//middle dot click//////////
 next.addEventListener('click', function() {
     if (tests.classList.contains('first')) {
         tests.classList.remove('first');
@@ -50,7 +50,7 @@ next.addEventListener('click', function() {
     if (tests.classList.contains('third')) {
         tests.classList.remove('third');
     }
-    //clear timing interval
+    //clear timing interval////////
     window.clearInterval(nextNextInt);
     window.clearInterval(nextInt);
     window.clearInterval(prevInt);
@@ -109,3 +109,31 @@ for (let i = 0; i < acc.length; i++) {
         }
     });
 }
+
+
+///////// POP UP ////////////////
+const popUp = document.getElementById('pop-up');
+const popUpLayer = document.getElementById('pop-up-layer');
+const closeModal = document.getElementById('close-pop-up');
+
+const subBtn = document.getElementById('sub-btn');
+
+
+
+subBtn.addEventListener('click', function() {
+    popUpLayer.style.display= 'flex';
+})
+
+closeModal.addEventListener('click', function() {
+    popUpLayer.style.display = 'none';
+})
+
+
+let popUpSeconds = 40;
+
+//trigger popup after popUpSeconds //
+let popUpFun = window.setInterval(function() {
+    popUpLayer.style.display = 'flex';
+
+    window.clearInterval(popUpFun);
+}, popUpSeconds * 1000);
