@@ -44,6 +44,7 @@ body {
     animation-duration: 100ms;
     animation-fill-mode: both;
     animation-timing-function: linear;
+    color: white;
 }
 
 .pop-up-title {
@@ -75,7 +76,7 @@ body {
     transition: all 200ms;
     cursor: pointer;
     border-top-right-radius: 16px;
-    border-bottom-right-radius: 16px;
+    /*border-bottom-right-radius: 16px; */
     padding-left: 12px;
     padding-bottom: 8px;
     padding-top: 5px;
@@ -296,18 +297,27 @@ body {
 }
 
 /***** SUBSCRIBE NAV ******/
-
+#sub-btn {
+    display: none;
+}
 
 /* GALLERY SECTION*/
 
 .gallery-sec {
-    padding: .rem;
     margin-right: .3rem;
     height: 130vh;
     width: 100%;
     padding: 3px;
     padding-top: 10px;
     padding-bottom: 10px;
+    background-image: url('wooden-background.jpg');
+    font-family: roboto;
+}
+
+.gallery-sec h1 {
+    color: white;
+    text-align: center;
+    font-size: 35px;
 }
 
 .gallery {
@@ -357,12 +367,20 @@ body {
     grid-row-end: span 2;
 }
 
+/*not in directions*/
 .g-header {
+    text-align: center;
+    color: white;
+
+}
+
+/*.g-header {
     margin-left: 5px;
     margin-right: 5px;
     flex: 0 1 100%;
     grid-column: 1 / -1;
-}
+    color: white;
+}*/
 
 .gallery > * {
     background-color: #fff;
@@ -372,51 +390,60 @@ body {
     font-size: 150%;
     margin-bottom: 10px;
 }
-
+/*
 .g-header {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 3rem;
-    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('https://images.pexels.com/photos/267320/pexels-photo-267320.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3));
     background-position: center;
-    color: white;
-}
+
+
+} */
+
 
 .a {
-    background: url('https://images.pexels.com/photos/266840/pexels-photo-266840.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-image: url('https://images.pexels.com/photos/266840/pexels-photo-266840.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 }
 .b {
-    background: url('https://images.pexels.com/photos/812875/pexels-photo-812875.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-image: url('https://images.pexels.com/photos/812875/pexels-photo-812875.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 }
 .c {
-    background: url('https://images.pexels.com/photos/421160/pexels-photo-421160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-image: url('https://images.pexels.com/photos/421160/pexels-photo-421160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     background-position: -70px;
+    margin-bottom: 80px;
+
 }
 .d {
-    background: url('https://images.pexels.com/photos/112285/pexels-photo-112285.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-image: url('https://images.pexels.com/photos/112285/pexels-photo-112285.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 }
 .e {
-    background: url('https://images.pexels.com/photos/293405/pexels-photo-293405.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-image: url('https://images.pexels.com/photos/293405/pexels-photo-293405.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 }
 .f {
-    background: url('https://images.pexels.com/photos/1994/red-vintage-shoes-sport.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-image: url('https://images.pexels.com/photos/1994/red-vintage-shoes-sport.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     background-repeat: no-repeat;
     background-position: -40px;
 }
 .g {
-    background: url('https://images.pexels.com/photos/373964/pexels-photo-373964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-image: url('https://images.pexels.com/photos/373964/pexels-photo-373964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     background-position: -100px;
+    margin-bottom: 80px;
 }
 .h {
-    background: url('https://images.pexels.com/photos/247203/pexels-photo-247203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-image: url('https://images.pexels.com/photos/247203/pexels-photo-247203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    margin-bottom: 80px;
 }
 .i {
-    background: url('https://images.pexels.com/photos/40383/shoes-rock-climbing-hiking-walking-40383.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-image: url('https://images.pexels.com/photos/40383/shoes-rock-climbing-hiking-walking-40383.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    margin-bottom: 80px;
+
 }
 .j {
-    background: url('https://images.pexels.com/photos/116150/pexels-photo-116150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-image: url('https://images.pexels.com/photos/116150/pexels-photo-116150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     background-position: 0px -60px;
+    margin-bottom: 80px;
 }
 
 .panel div {
@@ -618,6 +645,7 @@ FOOTER
     display: flex;
     flex-direction: column;
 }
+
 
 .footer-cta p {
     margin: 0;
